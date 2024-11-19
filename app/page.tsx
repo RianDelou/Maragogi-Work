@@ -1,4 +1,5 @@
 import CantinhoDoSiri from "@/components/CantinhoDoSiri/CantinhoDoSiri";
+import CantinhoDoSiriFofinho from "@/components/CantinhoDoSiri/CantinhoDoSiriFofinho";
 import Divisor from "@/components/Divisor";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import ReserveSection from "@/components/ReserveSection/ReserveSection";
@@ -12,6 +13,7 @@ export default function LandingPage() {
       <VideoSection></VideoSection>
       <Divisor></Divisor>
       <CantinhoDoSiri></CantinhoDoSiri>
+      <CantinhoDoSiriFofinho></CantinhoDoSiriFofinho>
     </section>
   )
 }

@@ -1,0 +1,122 @@
+.custom-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 1000px; 
+  padding: 20px;
+}
+
+.react-calendar.custom-calendar {
+  background-color: #fff8e8;
+}
+
+.react-calendar.react-calendar--selectRange.custom-calendar {
+  background-color: #fff8e8;
+}
+
+.react-calendar__navigation__next2-button,
+.react-calendar__navigation__prev2-button {
+  display: none; /* Esconde os botões de navegação para os anos */
+}
+
+.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+  color:#FFA901;
+}
+
+/* Estilizando os dias do calendário */
+.react-calendar__tile {
+  background: none;
+  color: #ff7a00;
+  font-weight: bold;
+  border-radius: 4px; /* Reduz o arredondamento */
+  padding: 8px; /* Reduz o espaçamento interno */
+  margin: 2px; /* Adiciona espaçamento entre os botões */
+}
+
+/* Estilo para o intervalo de datas selecionado */
+.react-calendar__tile--range {
+  background: #FFA901;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px; /* Mantém consistente com o botão normal */
+  margin: 2px; /* Adiciona espaçamento entre os botões do intervalo */
+}
+
+/* Estilo para o primeiro e o último dia do intervalo */
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+  background: #FFA901;
+  color: white;
+  border-radius: 4px; /* Consistência no arredondamento */
+  margin: 2px; /* Adiciona espaçamento */
+}
+
+
+/* Estilizando os dias do calendário */
+.react-calendar__tile {
+  background: none;
+  color: #ff7a00;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px; /* Aumentei o tamanho dos dias */
+}
+
+.react-calendar__tile:hover {
+  background: #ffe4b3;
+  cursor: pointer;
+}
+
+.react-calendar__tile--active {
+  background: #ff7a00;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilo para o intervalo de datas selecionado */
+.react-calendar__tile--range {
+  background: #FFA901;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilo para o primeiro e o último dia do intervalo */
+.react-calendar__tile--rangeStart {
+  background: #FFA901;
+  color: white;
+}
+
+.react-calendar__tile--rangeEnd {
+  background: #FFA901;
+  color: white;
+}
+
+/* Cabeçalho e dias da semana */
+.react-calendar__navigation button {
+  color: #ff7a00;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #999;
+  
+}
+
+/* Removendo bordas padrão */
+.react-calendar {
+  border: none;
+  background-color: #fff6e1;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Layout geral */
+.custom-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
