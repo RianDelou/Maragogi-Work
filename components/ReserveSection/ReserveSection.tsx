@@ -9,7 +9,7 @@ export default function ReserveSection() {
         FÉRIAS DE JULHO NO SALINAS MARAGOGI É <br /> DIVERSÃO GARANTIDA
       </h1>
 
-      <p className="text-center">Férias de Julho é sinônimo de diversão em família! No Salinas Maragogi, as crianças são<br/>
+      <p className="text-center text-[#847758]  text-2xl">Férias de Julho é sinônimo de diversão em família! No Salinas Maragogi, as crianças são<br/>
         superestrelas com estadia grátis*, Clubinho Infantil repleto de atividades, buffet especialmente<br/>
         pensado para os pequenos paladares e muito mais!</p>
 
