@@ -6,9 +6,18 @@ import { useState, useRef } from "react";
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    { src: "/slider1.png", text: "Delícias e brincadeiras para o seu filho se esbaldar nas férias escolares" },
-    { src: "/slider2.png", text: "Praia, sol e piscina: o combo perfeito para curtir em família" },
-    { src: "/slider3.png", text: "Traga o seu pequeno para aproveitar as férias de julho no Salinas Maragogi" },
+    {
+      src: "/slider1.png",
+      text: "Delícias e brincadeiras para o seu filho se esbaldar nas férias escolares",
+    },
+    {
+      src: "/slider2.png",
+      text: "Praia, sol e piscina: o combo perfeito para curtir em família",
+    },
+    {
+      src: "/slider3.png",
+      text: "Traga o seu pequeno para aproveitar as férias de julho no Salinas Maragogi",
+    },
   ];
   const [dragStart, setDragStart] = useState<number | null>(null);
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -28,7 +37,10 @@ export default function Slider() {
       if (dragDistance > threshold && currentSlide > 0) {
         setCurrentSlide(currentSlide - 1);
         setDragStart(null);
-      } else if (dragDistance < -threshold && currentSlide < slides.length - 1) {
+      } else if (
+        dragDistance < -threshold &&
+        currentSlide < slides.length - 1
+      ) {
         setCurrentSlide(currentSlide + 1);
         setDragStart(null);
       }
@@ -40,10 +52,7 @@ export default function Slider() {
   };
 
   return (
-    <section
-      className="relative w-full bg-[#F4E3B3] pt-[140px] pb-[140px] overflow-hidden"
-    >
-    
+    <section className="relative w-full bg-[#F4E3B3] pt-[140px] pb-[140px] overflow-hidden">
       <div
         ref={sliderRef}
         className="relative flex transition-transform duration-700 ease-in-out z-10"
@@ -71,20 +80,23 @@ export default function Slider() {
             }
           }
         }}
-        onTouchEnd={() => setDragStart(null)} 
+        onTouchEnd={() => setDragStart(null)}
       >
         {slides.map((slide, index) => (
           <div key={index} className="w-full flex-shrink-0">
-            <img
+            <Image
               src={slide.src}
               alt={`Slider ${index + 1}`}
-              className="w-full max-h-[700px] object-contain" 
+              width={1200} 
+              height={700} 
+              className="w-full max-h-[700px] object-contain"
             />
-             <p className="text-center mt-2 text-lg text-gray-700">{slide.text}</p>
+            <p className="text-center mt-2 text-lg text-gray-700">
+              {slide.text}
+            </p>
           </div>
         ))}
       </div>
-
 
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-20 mb-14">
         {slides.map((_, index) => (
