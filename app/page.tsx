@@ -3,6 +3,7 @@ import CantinhoDoSiriFofinho from "@/components/CantinhoDoSiri/CantinhoDoSiriFof
 import Cardss from "@/components/Cardss/Cardss";
 import Divisor from "@/components/Divisor";
 import DivisorTwo from "@/components/DivisorTwo";
+import Footer from "@/components/Footer/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import ReserveSection from "@/components/ReserveSection/ReserveSection";
 import Slider from "@/components/Slider/Slider";
@@ -20,6 +21,7 @@ export default function LandingPage() {
       <DivisorTwo></DivisorTwo>
       <Cardss></Cardss>
       <Slider></Slider>
+      <Footer></Footer>
     </section>
   );
 }

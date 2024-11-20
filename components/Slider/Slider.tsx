@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useState, useRef } from "react";
 
@@ -40,7 +41,7 @@ export default function Slider() {
 
   return (
     <section
-      className="relative w-full bg-[#F4E3B3] pt-[140px] pb-[100px] overflow-hidden"
+      className="relative w-full bg-[#F4E3B3] pt-[140px] pb-[140px] overflow-hidden"
     >
     
       <div
@@ -85,7 +86,7 @@ export default function Slider() {
       </div>
 
 
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-20 mb-14">
         {slides.map((_, index) => (
           <button
             key={index}
