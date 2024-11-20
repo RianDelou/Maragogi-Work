@@ -1,7 +1,7 @@
 export default function CantinhoDoSiri() {
   return (
     <section
-      className="flex flex-col items-center justify-start bg-[#6CCCFF] relative"
+      className="flex flex-col items-center justify-start bg-[#6CCCFF] relative section-superior"
       style={{
         backgroundImage: 'url("/sol e nuvens.png")', // Caminho da imagem
         backgroundSize: "1600px", // Tamanho fixo da imagem

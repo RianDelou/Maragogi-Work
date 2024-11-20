@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* Ajustes para telas médias */
+@media (max-width: 1024px) {
+  .text-4xl {
+    font-size: 2rem; /* Reduz tamanho do título */
+  }
+
+  .max-w-4xl {
+    max-width: 90%; /* Ajusta largura dos textos */
+  }
+
+  .h-screen {
+    height: 100vh; /* Garante a altura em telas médias */
+  }
 }
 
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr; /* Deixa o grid em uma coluna */
+  }
+
+  .gap-x-96 {
+    gap: 1rem; /* Reduz o espaçamento entre colunas */
+  }
+
+  .text-4xl {
+    font-size: 1.5rem; /* Reduz ainda mais o título */
+  }
+}

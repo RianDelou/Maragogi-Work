@@ -6,14 +6,14 @@ import ReserveSection from "@/components/ReserveSection/ReserveSection";
 import VideoSection from "@/components/VideoSection/VideoSection";
 
 export default function LandingPage() {
-  return(
-    <section>
-      <HeroSection></HeroSection>
-      <ReserveSection></ReserveSection>
-      <VideoSection></VideoSection>
-      <Divisor></Divisor>
-      <CantinhoDoSiri></CantinhoDoSiri>
-      <CantinhoDoSiriFofinho></CantinhoDoSiriFofinho>
+  return (
+    <section className="relative w-full">
+      <HeroSection />
+      <ReserveSection />
+      <VideoSection />
+      <Divisor />
+      <CantinhoDoSiri />
+      <CantinhoDoSiriFofinho />
     </section>
-  )
+  );
 }
