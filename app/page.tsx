@@ -5,6 +5,7 @@ import Divisor from "@/components/Divisor";
 import DivisorTwo from "@/components/DivisorTwo";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import ReserveSection from "@/components/ReserveSection/ReserveSection";
+import Slider from "@/components/Slider/Slider";
 import VideoSection from "@/components/VideoSection/VideoSection";
 
 export default function LandingPage() {
@@ -18,6 +19,7 @@ export default function LandingPage() {
       <CantinhoDoSiriFofinho />
       <DivisorTwo></DivisorTwo>
       <Cardss></Cardss>
+      <Slider></Slider>
     </section>
   );
 }
