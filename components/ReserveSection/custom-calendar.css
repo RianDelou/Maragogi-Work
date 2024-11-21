@@ -120,3 +120,55 @@
   align-items: center;
   gap: 16px;
 }
+
+
+/* Mobile: Ajusta o layout para telas pequenas */
+@media (max-width: 640px) {
+  .custom-calendar {
+    transform: scale(0.9); /* Reduz tamanho do calendário */
+    transform-origin: top center;
+    max-width: 300px; /* Limita a largura no mobile */
+  }
+
+  .custom-calendar-container button {
+    font-size: 0.875rem; /* Botão menor */
+    padding: 0.5rem 1rem; /* Reduz padding do botão */
+  }
+
+   .custom-calendar {
+    transform: scale(0.85);  /* Reduz o tamanho do calendário para 85% */
+    transform-origin: center;  /* Centraliza o calendário */
+  }
+
+  .custom-calendar .react-calendar__month-view {
+    font-size: 0.8rem;  /* Reduz o tamanho da fonte para o calendário */
+  }
+
+  .custom-calendar .react-calendar__tile {
+    font-size: 0.9rem;  /* Ajusta o tamanho dos números no calendário */
+  }
+
+  .text-xl {
+    font-size: 0.9rem;  /* Reduz o tamanho do título */
+  }
+
+  .py-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .px-12 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .px-24 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .w-full {
+    width: 100%;  /* Garante que os inputs ocupem toda a largura no mobile */
+  }
+
+}

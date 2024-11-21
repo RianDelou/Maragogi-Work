@@ -82,9 +82,7 @@ export default function ReservationCalendar() {
   }
 
   return (
-    <div
-      className="flex flex-col items-center bg-[#fff8e8] p-6 rounded-lg shadow-md max-w-2xl mx-auto"
-    >
+    <div className="flex flex-col items-center bg-[#fff8e8] p-6 rounded-lg shadow-md max-w-2xl mx-auto">
       {!showInputs ? (
         <>
           <h1 className="text-xl font-bold mb-6" style={{ color: "#FFA901" }}>
