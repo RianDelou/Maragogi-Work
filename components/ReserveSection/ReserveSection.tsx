@@ -11,12 +11,7 @@ export default function ReserveSection() {
       </h1>
 
       
-      <p className="text-center text-[#847758] text-lg max-w-4xl mx-auto my-4">
-        Férias de Julho é sinônimo de diversão em família! No Salinas Maragogi,
-        as crianças são superestrelas com estadia grátis*, Clubinho Infantil
-        repleto de atividades, buffet especialmente pensado para os pequenos
-        paladares e muito mais!
-      </p>
+   
 
       <PriceImage />
       <div
